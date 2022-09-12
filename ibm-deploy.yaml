@@ -1,0 +1,20 @@
+ apiVersion: apps/v1
+ kind: Deployment
+ metadata:
+   name: flask-node-deployment-1
+ spec:
+   replicas: 1
+   selector:
+     matchLabels:
+       app: flasknode-1
+   template:
+     metadata:
+       labels:
+         app: flasknode-1
+     spec:
+       containers:
+       - name: flasknode-1
+         image: us.icr.io/plasmadonar/plasma:v1
+         imagePullPolicy: Always
+         ports:
+         - containerPort: 8080
