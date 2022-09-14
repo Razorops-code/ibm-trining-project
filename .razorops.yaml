@@ -1,0 +1,9 @@
+
+tasks:
+  build-deps:
+    #runner: razorci/openjdk
+    steps:
+    - checkout
+    - commands:
+      - kubectl apply -f deployment.yml
+      - kubectl apply -f service.yml
