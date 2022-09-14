@@ -14,7 +14,7 @@
      spec:
        containers:
        - name: flasknode
-         image: us.icr.io/jobportal/jobportal
+         image: razoropsrepocode/ibm:V1
          imagePullPolicy: Always
          ports:
          - containerPort: 5000
