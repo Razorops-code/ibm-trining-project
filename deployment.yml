@@ -17,4 +17,4 @@
          image: razoropsrepocode/ibm:V1
          imagePullPolicy: Always
          ports:
-         - containerPort: 5000
+         - containerPort: 8080
