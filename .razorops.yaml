@@ -9,4 +9,8 @@ tasks:
     - run: pip install pytest
     - run: pip install pytest-cov
     - run: pytest --cov .
-
+    - run: |
+           curl -Os https://uploader.codecov.io/latest/linux/codecov
+           chmod +x codecov
+           ./codecov -t ${CODECOV_TOKEN}
+    
