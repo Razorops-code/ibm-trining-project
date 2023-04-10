@@ -8,7 +8,8 @@ tasks:
     - run: pip install -r requirements.txt
     - run: pip install pytest
     - run: pip install pytest-cov
-    - run: pytest --cov .
+    - run: pytest --cov app
+    - codecov/upload 
     - run: |
            curl -Os https://uploader.codecov.io/latest/linux/codecov
            chmod +x codecov
